@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Travel theme - Sky blues, tropical teals, warm corals */
+    --background: 210 100% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Soft sky blue primary */
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light blue secondary */
+    --secondary: 199 95% 92%;
+    --secondary-foreground: 199 89% 25%;
+
+    /* Muted soft blue-gray */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Tropical teal accent */
+    --accent: 172 66% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Warm coral for CTAs */
+    --coral: 38 92% 50%;
+    --coral-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 199 89% 48%;
+
+    --radius: 0.75rem;
+
+    /* Gradient definitions */
+    --gradient-hero: linear-gradient(135deg, hsl(199 89% 48% / 0.9), hsl(172 66% 50% / 0.9));
+    --gradient-card: linear-gradient(to bottom, hsl(0 0% 100%), hsl(199 95% 97%));
+    --gradient-accent: linear-gradient(135deg, hsl(172 66% 50%), hsl(199 89% 48%));
+    
+    /* Shadows with soft blue tint */
+    --shadow-soft: 0 4px 20px hsl(199 89% 48% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(199 89% 48% / 0.12);
+    --shadow-strong: 0 12px 40px hsl(199 89% 48% / 0.18);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 215 30% 12%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 28% 16%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 28% 16%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 199 89% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 22%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 25% 22%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 172 66% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --coral: 38 92% 50%;
+    --coral-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 25% 22%;
+    --input: 215 25% 22%;
+    --ring: 199 89% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

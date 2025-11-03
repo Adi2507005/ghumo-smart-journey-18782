@@ -32,7 +32,7 @@ export const HeroSection = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    const webhookUrl = "https://adityamishra69.app.n8n.cloud/webhook-test/63eeb228-f133-4c6f-9169-aa8f4df9ad86";
+    const webhookUrl = "https://adityaaa07.app.n8n.cloud/webhook-test/33d559d9-5d06-4e6c-8da2-8abced5adbcd";
     
     console.log("Submitting form data:", formData);
     console.log("Webhook URL:", webhookUrl);
